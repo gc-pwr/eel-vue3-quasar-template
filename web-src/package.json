@@ -1,0 +1,27 @@
+{
+  "name": "web-src",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "electron/index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "electron ."
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.16.17",
+    "@vueuse/core": "^10.0.2",
+    "quasar": "^2.18.1",
+    "vue": "^3.2.45",
+    "vue-router": "4.5.0"
+  },
+  "devDependencies": {
+    "@quasar/vite-plugin": "^1.9.0",
+    "@vitejs/plugin-vue": "^5.2.3",
+    "electron": "^35.2.0",
+    "sass-embedded": "^1.86.3",
+    "vite": "^6.3.2"
+  }
+}
