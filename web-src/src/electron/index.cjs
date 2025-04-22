@@ -3,10 +3,7 @@ const { app, BrowserWindow, dialog, ipcMain } = require('electron');
 const path = require('path');
 const fs = require('fs');
 
-// Handle ICU data issues in PyInstaller bundles
 if (process.env.PYINSTALLER_TEMP_FOLDER) {
-    // If running from PyInstaller bundle
-    app.setPath('userData', path.join(process.env.PYINSTALLER_TEMP_FOLDER, 'userData'));
 
     // Tell Electron where to find its resources
     if (fs.existsSync(path.join(process.env.PYINSTALLER_TEMP_FOLDER, 'resources'))) {

@@ -49,7 +49,7 @@
           <!-- Navigation Items -->
           <q-item-label header class="text-weight-bold q-mt-md">Main Navigation</q-item-label>
 
-          <q-item clickable v-ripple to="/editor" exact active-class="bg-primary text-white">
+          <q-item clickable v-ripple to="/main" exact active-class="bg-primary text-white">
             <q-item-section avatar>
               <q-icon name="mdi-matrix" />
             </q-item-section>
